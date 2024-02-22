@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/taskdb
+    username: postgres
+    password: p@ssw0rd
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: bookshopvip@gmail.com
+    password: kxdwnvnamebnwdom
+    recipient: aharapoglu@gmail.com
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  jackson:
+    date-format: "yyyy-MM-dd"
+    time-zone: "Europe/Istanbul"
+
