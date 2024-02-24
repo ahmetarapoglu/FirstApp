@@ -97,16 +97,16 @@ public class ScheduledJob {
 
     }
 
-    //@Scheduled(fixedRate = 1000)
-    @Scheduled(cron = "0 0 1 * * ?")
+    // @Scheduled(fixedRate = 1000)
+     @Scheduled(cron = "0 0 1 * * ?")
     public void executeReportGeneration() {
 
         ReportData reportData = getData();
 
         String htmlContent = generateHtmlReport(reportData);
 
-//        emailService.sendEmail(recipient,"Report",htmlContent);
-//        System.out.println("Report sent at 01:00 AM Successfully!.");
+       emailService.sendEmail(recipient,"Report",htmlContent);
+       System.out.println("Report sent at 01:00 AM Successfully!.");
     }
 
 }

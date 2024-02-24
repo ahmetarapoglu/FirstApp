@@ -12,5 +12,4 @@ import java.time.LocalDateTime;
 public class RequestData {
     private LocalDateTime startDate;
     private LocalDateTime endDate;
-
 }
